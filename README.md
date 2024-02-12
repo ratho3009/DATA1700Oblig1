@@ -4,7 +4,7 @@ OsloMet brukernavn: ratho3009
 
 GitHub brukernavn: ratho3009
 
-Github repo URL: https://github.com/data1700-v23/oblig-1-ratho3009
+Github repo URL: https://github.com/data1700-v23/oblig-1-ratho3009](https://github.com/ratho3009/DATA1700Oblig1
 
 Fullt navn: Rasmus Renneflott Thorkildsen
 
