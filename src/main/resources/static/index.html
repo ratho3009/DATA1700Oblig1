@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <link rel="stylesheet" href="css/stylesheet.css"> <!-- External CSS file -->
+    <script src="billettBestilling.js"></script>
+</head>
+<body>
+<main>
+    <h1>Bestilling av Kinobilletter</h1>
+    <form id="billettForm">
+        <div class="input-group">
+            <label for="filmListe">Velg film:</label>
+            <select id="filmListe" onchange="favTutorial()">
+                <option>Velg film her</option>
+                <option>Star Wars</option>
+                <option>Hunger Games</option>
+                <option>Inception</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="antall">Antall:</label>
+            <input id="antall" type="number" style="width: 40px;">
+        </div>
+
+        <div class="input-group">
+            <label for="fornavn">Fornavn:</label>
+            <input id="fornavn" type="text">
+        </div>
+
+        <div class="input-group">
+            <label for="etternavn">Etternavn:</label>
+            <input id="etternavn" type="text">
+        </div>
+
+        <div class="input-group">
+            <label for="telefonnr">Telefonnr:</label>
+            <input id="telefonnr" type="tel">
+        </div>
+
+        <div class="input-group">
+            <label for="epost">Epost:</label>
+            <input id="epost" type="email">
+        </div>
+
+        <button type="button" onclick="kjopBillett()">Kjøp Billett</button>
+    </form>
+
+    <h2>Alle Billetter</h2>
+    <button type="button">Slett alle billettene</button>
+</main>
+</body>
+</html>
