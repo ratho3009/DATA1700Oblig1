@@ -10,9 +10,9 @@ Fullt navn: Rasmus Renneflott Thorkildsen
 
 Kort beskrivelse av applikasjon (5-10 setninger):
 
-Bestilling av kinobilletter er en JavaScript-applikasjon som lar brukere registrere og vise kjøpte kinobilletter. 
-Den inneholder funksjoner for å tømme og validere inputfelt, samt en knapp for å slette alle billetter. 
-Applikasjonen består av en HTML-fil, en JavaScript-fil, og en README.md-fil, organisert i en bestemt mappestruktur.
+JavaScript-applikasjon for å registrere og vise kjøpte kinobilletter. 
+Kode som sjekker om input er gyldig eller ikke, gir ut feilmelding hvis noe er galt. 
+HTML-fil, JavaScript-fil, README.md-fil, organisert i samme mappestruktur som videoen viste.
 
 
 
