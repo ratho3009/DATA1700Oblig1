@@ -3,53 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Kinobilletter</title>
-    <link rel="stylesheet" href="css/stylesheet.css"> <!-- External CSS file -->
-    <script src="billettBestilling.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
+
 <main>
+
+    <div id="warningMessage" style="color: red;"></div>
+
     <h1>Bestilling av Kinobilletter</h1>
     <form id="billettForm">
         <div class="input-group">
             <label for="filmListe">Velg film:</label>
             <select id="filmListe" onchange="favTutorial()">
-                <option>Velg film her</option>
+                <option disabled selected>Velg film her</option>
                 <option>Star Wars</option>
                 <option>Hunger Games</option>
                 <option>Inception</option>
             </select>
+            <span id="filmListeError" style="color: red;"></span>
         </div>
 
         <div class="input-group">
             <label for="antall">Antall:</label>
-            <input id="antall" type="number" style="width: 40px;">
+            <input id="antall" type="number" min="1" value="1" style="width: 40px;">
+            <span id="antallError" style="color: red;"></span>
         </div>
 
         <div class="input-group">
             <label for="fornavn">Fornavn:</label>
             <input id="fornavn" type="text">
+            <span id="fornavnError" style="color: red;"></span>
         </div>
 
         <div class="input-group">
             <label for="etternavn">Etternavn:</label>
             <input id="etternavn" type="text">
+            <span id="etternavnError" style="color: red;"></span>
         </div>
 
         <div class="input-group">
             <label for="telefonnr">Telefonnr:</label>
-            <input id="telefonnr" type="tel">
+            <input id="telefonnr" type="tel" pattern="\d*" title="Please enter numbers only">
+            <span id="telefonnrError" style="color: red;"></span>
         </div>
 
         <div class="input-group">
             <label for="epost">Epost:</label>
             <input id="epost" type="email">
+            <span id="epostError" style="color: red;"></span>
         </div>
 
-        <button type="button" onclick="kjopBillett()">Kjøp Billett</button>
     </form>
+    <button id="submitBtn" type="button">Kjøp Billett</button>
+
 
     <h2>Alle Billetter</h2>
-    <button type="button">Slett alle billettene</button>
+    <h3>Film Antall Fornavn Etternavn Telefonnr Epost</h3>
+    <p id="shopping"></p>
+    <button id="clearBtn" type="button">Slett alle billettene</button>
+    <script src="billettBestilling.js"></script>
 </main>
 </body>
 </html>
