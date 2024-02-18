@@ -9,3 +9,11 @@ input, select {
 button {
     margin-top: 10px;
 }
+
+.red-text {
+    color: red;
+}
+
+#antall {
+    width: 40px;
+}

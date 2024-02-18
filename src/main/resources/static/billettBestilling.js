@@ -56,8 +56,8 @@ document.getElementById("submitBtn").addEventListener("click", function() {
 });
 
 document.getElementById("clearBtn").addEventListener("click", function() {
-    billetter = []; // Clear the array
-    visBilletter(); // Update the display
+    billetter = []; // nullstiller arrayet
+    visBilletter(); // fjerner viste billetter
 });
 
 function visBilletter() {
@@ -65,5 +65,5 @@ function visBilletter() {
     for (var i = 0; i < billetter.length; i++) {
         listeHTML += billetter[i] + "<br>";
     }
-    document.getElementById("shopping").innerHTML = listeHTML;
+    document.getElementById("billettList").innerHTML = listeHTML;
 }
