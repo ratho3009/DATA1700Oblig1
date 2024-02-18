@@ -6,11 +6,8 @@
     <link href="css/stylesheet.css" rel="stylesheet">
 </head>
 <body>
-
 <main>
-
     <div id="warningMessage" class="red-text"></div>
-
     <h1>Bestilling av Kinobilletter</h1>
     <form id="billettForm">
         <div class="input-group">
@@ -23,45 +20,38 @@
             </select>
             <span id="filmListeError" class="red-text"></span>
         </div>
-
         <div class="input-group">
             <label for="antall">Antall:</label>
             <input id="antall" min="1" type="number" value="1">
             <span id="antallError" class="red-text"></span>
         </div>
-
         <div class="input-group">
             <label for="fornavn">Fornavn:</label>
             <input id="fornavn" type="text">
             <span id="fornavnError" class="red-text"></span>
         </div>
-
         <div class="input-group">
             <label for="etternavn">Etternavn:</label>
             <input id="etternavn" type="text">
             <span id="etternavnError" class="red-text"></span>
         </div>
-
         <div class="input-group">
             <label for="telefonnr">Telefonnr:</label>
             <input id="telefonnr" pattern="\d*" title="Please enter numbers only" type="tel">
             <span id="telefonnrError" class="red-text"></span>
         </div>
-
         <div class="input-group">
             <label for="epost">Epost:</label>
             <input id="epost" type="email">
             <span id="epostError" class="red-text"></span>
         </div>
-
     </form>
     <button id="submitBtn" type="button">Kjøp Billett</button>
-
     <h2>Alle Billetter</h2>
     <h3>Film Antall Fornavn Etternavn Telefonnr Epost</h3>
     <p id="billettList"></p>
     <button id="clearBtn" type="button">Slett alle billettene</button>
-    <script src="billettBestilling.js"></script>
+    <script src="billettBestilling.js"></script> <!-- scripten linkes her for at layoutet skal bli riktig -->
 </main>
 </body>
 </html>

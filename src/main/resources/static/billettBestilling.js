@@ -1,5 +1,6 @@
-var billetter = [];
+var billetter = []; //lager arreyet
 
+//setter verdiene til det i input feltet
 document.getElementById("submitBtn").addEventListener("click", function() {
     var isValid = true;
     var film = document.getElementById("filmListe").value;
@@ -15,6 +16,8 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     document.getElementById("epostError").textContent = '';
     document.getElementById("antallError").textContent = '';
     document.getElementById("filmListeError").textContent = '';
+
+    //sjekker at krav er oppfylt
 
     if (fornavn.trim() === "") {
         document.getElementById("fornavnError").textContent = "Fornavn kan ikke være tomt.";
