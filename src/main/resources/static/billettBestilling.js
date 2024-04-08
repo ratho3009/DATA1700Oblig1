@@ -56,6 +56,13 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     var fulltNavn = film + " " + antall + " " + fornavn + " " + etternavn + " " + telefonnr + " " + epost;
     billetter.push(fulltNavn);
     visBilletter();
+
+    document.getElementById("filmListe").selectedIndex = 0;
+    document.getElementById("fornavn").value = '';
+    document.getElementById("etternavn").value = '';
+    document.getElementById("telefonnr").value = '';
+    document.getElementById("epost").value = '';
+    document.getElementById("antall").value = 1;
 });
 
 document.getElementById("clearBtn").addEventListener("click", function() {
